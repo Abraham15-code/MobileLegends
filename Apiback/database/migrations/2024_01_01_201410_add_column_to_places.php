@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::table('places', function (Blueprint $table) {
             $table->integer('parent_id')->nullable();
+            $table->string('title',100)->nullable();
         });
     }
 
@@ -23,6 +24,7 @@ return new class extends Migration
     {
         Schema::table('places', function (Blueprint $table) {
             $table->dropColumn('parent_id');
+            $table->dropColumn('title');
         });
     }
 };
