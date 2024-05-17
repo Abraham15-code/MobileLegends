@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->string('name',100);
-            $table->string('description',255);
+            $table->text('description');
             $table->integer('parent_id')->nullable();
             $table->enum('type_damage',['magic','physical']);
             $table->dateTime('created_at');
