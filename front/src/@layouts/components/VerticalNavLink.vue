@@ -22,7 +22,7 @@ const props = defineProps({
         class="nav-item-icon"
       />
       <!-- 👉 Title -->
-      <span class="nav-item-title">
+      <span class="nav-item-title text-capitalize">
         {{ item.title }}
       </span>
     </Component>

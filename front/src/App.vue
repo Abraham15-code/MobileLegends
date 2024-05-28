@@ -9,6 +9,5 @@ const { global } = useTheme()
 <template>
   <VApp :style="`--v-global-theme-primary: ${hexToRgb(global.current.value.colors.primary)}`">
     <RouterView />
-    <UpgradeToPro />
   </VApp>
 </template>

@@ -9,6 +9,7 @@ import '@layouts/styles/index.scss'
 import '@styles/styles.scss'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
+import 'boxicons/css/boxicons.min.css'
 
 loadFonts()
 
@@ -21,6 +22,7 @@ const app = createApp(App)
 app.use(vuetify)
 app.use(createPinia())
 app.use(router)
+app.use()
 
 // Mount vue app
 app.mount('#app')

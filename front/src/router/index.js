@@ -10,32 +10,64 @@ const router = createRouter({
       children: [
         {
           path: 'dashboard',
-          component: () => import('../pages/dashboard.vue'),
+          component: () => import('@/pages/dashboard.vue'),
         },
         {
-          path: 'account-settings',
-          component: () => import('../pages/account-settings.vue'),
+          path: 'places',
+          name: 'places',
+          component: () => import('@/pages/places.vue'),
         },
         {
-          path: 'typography',
-          component: () => import('../pages/typography.vue'),
+          path: 'roles',
+          name: 'roles',
+          component: () => import('@/pages/roles.vue'),
         },
         {
-          path: 'icons',
-          component: () => import('../pages/icons.vue'),
+          path: 'powers',
+          name: 'powers',
+          component: () => import('@/pages/powers.vue'),
         },
         {
-          path: 'cards',
-          component: () => import('../pages/cards.vue'),
+          path: 'items',
+          name: 'items',
+          component: () => import('@/pages/items.vue'),
         },
         {
-          path: 'tables',
-          component: () => import('../pages/tables.vue'),
+          path: 'heroes',
+          name: 'heroes',
+          component: () => import('@/pages/heroes.vue'),
         },
         {
-          path: 'form-layouts',
-          component: () => import('../pages/form-layouts.vue'),
+          path: 'users',
+          name: 'users',
+          component: () => import('@/pages/users.vue'),
         },
+
+        // {
+        //   path: 'account-settings',
+        //   component: () => import('../pages/account-settings.vue'),
+        // },
+        // {
+        //   path: 'typography',
+        //   component: () => import('../pages/typography.vue'),
+        // },
+        // {
+        //   path: 'icons',
+        //   name: 'icons',
+        //   component: () => import('../pages/icons.vue'),
+        // },
+        // {
+        //   path: 'cards',
+        //   component: () => import('../pages/cards.vue'),
+        // },
+        // {
+        //   path: 'tables',
+        //   component: () => import('../pages/tables.vue'),
+        // },
+        // {
+        //   path: 'form-layouts',
+        //   component: () => import('../pages/form-layouts.vue'),
+        // },
       ],
     },
     {
